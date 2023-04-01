@@ -10,6 +10,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: docker build . -t laithharden/nest-app
+      - run: docker build . -t visweswarji123/nest-app
       - run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u ${{secrets.DOCKERHUB_USERNAME}} --password-stdin
-      - run: docker push laithharden/nest-appp
+      - run: docker push visweswarji123/mynodeapp
+
