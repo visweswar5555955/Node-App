@@ -1,18 +1,13 @@
- name: My Workflow1
-
-on:
-
-workflow_dispatch:
-
-
-jobs:
-  build:
+ - name: Workflow Dispatch
+   jobs:
+   build:
+  
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+        # See supported Node.js release schedule at https://nodej s.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v2
