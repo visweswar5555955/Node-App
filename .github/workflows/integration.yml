@@ -1,8 +1,7 @@
- name: My Workflow1
-
+ 
+name: My Workflow
 on:
-
-workflow_dispatch:
+  workflow_dispatch:
 
 
 jobs:
